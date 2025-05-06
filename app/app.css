@@ -1,12 +1,23 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /* fonts */
+  --font-milk: "Finger Paint", sans-serif;
+
+  /* colors */
+  --color-primary: #ff0055;
+  --color-secondary: #00ff00;
+  --color-tertiary: #0000ff;
+  --color-quaternary: #ffff00;
 }
 
 html,
 body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
   @apply bg-white dark:bg-gray-950;
 
   @media (prefers-color-scheme: dark) {
